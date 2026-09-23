@@ -1,29 +1,29 @@
-# Automated Adversary Infrastructure Take-Down / Triage System
+# Automated Adversary Infrastructure Triage System
  
-# 1. Update system & install OS-level dependencies
+## 1. Update system & install OS-level dependencies
 ```python
 	sudo apt update && sudo apt install -y python3-pip python3-venv build-essential libfuzzy-dev
 ```
 
-# 2. Create project directory and virtual environment
+## 2. Create project directory and virtual environment
 ```python
 	mkdir -p cti-triage-system
 	cd cti-triage-system
 	python3 -m venv venv
 	source venv/bin/activate
 ```
-# 3. Install required Python packages
+## 3. Install required Python packages
 ```python
 	pip install certstream dnspython requests playwright
 ```
-# 4. Install Playwright browser binaries and system dependencies
+## 4. Install Playwright browser binaries and system dependencies
 ```python
 	playwright install chromium
 	playwright install-deps chromium
 ```
 
 
-# 5. Script v.1
+## 5. Script v.1
 
 
 ```python
@@ -146,7 +146,7 @@ if __name__ == "__main__":
     print(f"[+] Screenshots stored in: ./{OUTPUT_DIR}/")
     print("=" * 65)
 ```
-# Excuting the code
+## Excuting the code
  ```python
  	python3 app.py
  ```
