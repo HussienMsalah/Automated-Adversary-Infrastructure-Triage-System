@@ -76,7 +76,9 @@ python3 app.py
 ```
 
 ## Project Structure
+```
 cti-triage-system/
 ├── app.py              # Core Triage & Monitoring Engine
 ├── README.md           # Project Documentation
 └── triage_results/     # Output Directory storing captured evidence screenshots
+```
